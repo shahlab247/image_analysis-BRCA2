@@ -41,6 +41,7 @@ from cellpose import models, io
 # DEFINE CELLPOSE MODEL
 # model_type='cyto' or model_type='nuclei'
 #model = models.Cellpose(gpu=False, model_type='cyto')
+#manually trained model(PCC_20X) is available on request
 model = models.CellposeModel(gpu=True, model_type='PCC_20X',device=torch.device("cuda:0"))
 #model = models.CellposeModel(gpu=True, model_type='MTE firsttry')
 # define CHANNELS to run segementation on
